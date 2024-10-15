@@ -14,13 +14,28 @@ blockquote > p:last-of-type {
   text-indent: 2rem;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: column;
-}
+@media only screen and (max-width: 719px) {
+  nav {
+    position: relative;
+  }
 
-header {
-  text-align: center;
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul li {
+    border-bottom: 2px solid white;
+    padding: 0.5rem 0;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
 }
 
 @media only screen and (min-width: 720px) {
