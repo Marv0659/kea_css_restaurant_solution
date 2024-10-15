@@ -1,64 +1,86 @@
-@import 'styles.css';
+@import "styles.css";
 
 /*
     Menu page
 */
 
 article.dish {
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    overflow: auto;
-    background-color: var(--colorBgArticle);
-    vertical-align: top;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: auto;
+  background-color: var(--colorBgArticle);
+  vertical-align: top;
 }
 
 article.dish > h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 p.menuItem {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 p.price {
-    position: relative;
-    right: 0;
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    border: thick solid var(--colorBgNav);
-    border-radius: 0.5rem;
-    color: var(--colorPrice);
-    background-color: var(--colorList);
-    font-weight: bold;
-    text-align: right;
+  position: relative;
+  right: 0;
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: thick solid var(--colorBgNav);
+  border-radius: 0.5rem;
+  color: var(--colorPrice);
+  background-color: var(--colorList);
+  font-weight: bold;
+  text-align: right;
+}
+
+header {
+  text-align: center;
 }
 
 article > header {
-    line-height: 2rem;
-    border-radius: 0.5rem;
-    text-indent: 0;
-    text-align: center;    
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  text-indent: 0;
+  text-align: left;
+  background-color: var(--colorBgArticle);
+  color: var(--colorMain);
 }
 img.menu {
-    width: 100%;
-    margin-bottom: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 600px) {
-    article > header {
-        text-align: left;
-        width: calc(100% - 320px - 3rem);
-    }
-    img.menu {
-        float: right;
-        margin: 0 0 0 0.5rem;
-        width: auto;
-    }
+  article > header {
+    text-align: left;
+    width: calc(100% - 320px - 3rem);
+  }
+  img.menu {
+    float: right;
+    margin: 0 0 0 0.5rem;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    article.dish {
-        display: inline-block;
-        width: 45%;
-    }
+  article.dish {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    justify-content: left;
+  }
 }
