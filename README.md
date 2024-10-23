@@ -25,6 +25,3 @@ The following practices applied to the project improve code readability and main
 
 ## Tools
 CSS3 / HTML5
-
-## Author:
-Arturo Mora-Rioja
